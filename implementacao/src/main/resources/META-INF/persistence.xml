@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+<persistence-unit name="MY_PU">
+
+<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+<class>com.gama.model.Carro</class>
+
+<properties>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+			<!--  <property name="javax.persistence.jdbc.url" value="jdbc:hsqldb:mem:standalone"/> -->
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://sql124.main-hosting.eu/u155305326_estoque" />
+			<property name="javax.persistence.jdbc.user" value="u155305326_heysen"/>
+			<property name="javax.persistence.jdbc.password" value="Edm1508952010"/>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+			<property name="hibernate.hbm2ddl.auto" value="update"/>
+			<property name="hibernate.show_sql" value="true"/>
+			<property name="hibernate.format_sql" value="false"/>
+		</properties>
+</persistence-unit>
+</persistence>
